@@ -13,6 +13,7 @@ function beginTimer() {
 
 function beginBreak() {
   buzzer.play();
+  document.title = "TIME FOR A BREAK";
   passive.style.display = "none";
   active.style.display = "block";
   setTimeout(beginTimer, 90000);
