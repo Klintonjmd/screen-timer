@@ -5,10 +5,11 @@ var buzzer = new Audio("buzzer.wav");
 window.onload = beginTimer();
 
 function beginTimer() {
-  document.title = "Sceen Timer";
+  buzzer.play();
+  document.title = "Screen Timer";
   passive.style.display = "block";
   active.style.display = "none";
-  setTimeout(beginBreak, 1200000);
+  setTimeout(beginBreak, 120000);
 }
 
 function beginBreak() {
